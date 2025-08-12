@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cloud, Code, ArrowRight, Mail } from 'lucide-react';
+import { Cloud, Code, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const HeroSection: React.FC = () => {
