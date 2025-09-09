@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Monitor, Globe, Settings, Users, Shield } from 'lucide-react';
+import { Code, Monitor, Settings, Users, Shield } from 'lucide-react';
 
 const ServicesSection: React.FC = () => {
   const services = [
@@ -14,12 +14,6 @@ const ServicesSection: React.FC = () => {
       title: "UI/UX Design",
       description: "Beautiful, intuitive interfaces that provide exceptional user experiences and drive engagement.",
       features: ["Responsive Design", "User Research", "Prototyping"]
-    },
-    {
-      icon: Globe,
-      title: "E-commerce Solutions",
-      description: "Comprehensive online stores with secure payment processing and inventory management.",
-      features: ["Payment Gateway", "Inventory System", "Analytics"]
     },
     {
       icon: Settings,

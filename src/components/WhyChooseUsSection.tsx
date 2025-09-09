@@ -90,7 +90,7 @@ const WhyChooseUsSection: React.FC = () => {
             </div>
             <div className="relative">
               <div className="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl p-8 text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">5+ Years</div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">15+ Years</div>
                 <div className="text-gray-700 mb-6">of Experience</div>
                 <div className="text-4xl font-bold text-blue-600 mb-2">50+</div>
                 <div className="text-gray-700 mb-6">Successful Projects</div>

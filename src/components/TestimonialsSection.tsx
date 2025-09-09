@@ -1,25 +1,25 @@
 import React from 'react';
-import { Star } from 'lucide-react';
+import lebamsImage from '../assets/lebams.jpg';
 
-const TestimonialsSection: React.FC = () => {
-  const testimonials = [
+const TeamSection: React.FC = () => {
+  const teamMembers = [
     {
-      name: "Sarah Johnson",
-      role: "CEO at TechStart Inc.",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
-      text: "The team delivered an exceptional web application that exceeded our expectations. Their attention to detail and commitment to quality is outstanding."
+      name: "Bambo Diaby",
+      role: "Fullstack Developer",
+      image: lebamsImage,
+      description: "Expert in modern web technologies with a passion for creating scalable and efficient applications. Specializes in .NET, C#, and cloud architecture."
     },
     {
-      name: "Michael Chen",
-      role: "CTO at Digital Solutions Ltd.",
+      name: "Mackonen Jordanos",
+      role: "Frontend Specialist",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
-      text: "Professional, reliable, and innovative. They transformed our complex requirements into a beautiful, functional application that our users love."
+      description: "Creative frontend developer focused on delivering exceptional user experiences. Expert in React, TypeScript, and modern UI/UX design principles."
     },
     {
-      name: "Emily Rodriguez",
-      role: "Product Manager at Growth Ventures",
+      name: "Francis Awagu",
+      role: "Product Owner",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
-      text: "Working with this team was a game-changer for our business. The application they built has significantly improved our operational efficiency."
+      description: "Strategic product leader with deep understanding of business requirements and user needs. Ensures projects deliver real value and exceptional results."
     }
   ];
 
@@ -28,36 +28,33 @@ const TestimonialsSection: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            What Our <span className="text-blue-600">Clients Say</span>
+            Meet Our <span className="text-blue-600">Team</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Don't just take our word for it. Here's what our satisfied clients have to say about working with us.
+            We're a passionate team of developers and designers dedicated to crafting exceptional digital solutions that drive your business forward.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-gradient-to-br from-white to-gray-50 rounded-lg">
-              <div className="p-8">
-                <div className="flex items-center mb-6">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-gray-600 mb-8 leading-relaxed italic">
-                  "{testimonial.text}"
-                </p>
-                <div className="flex items-center">
+          {teamMembers.map((member, index) => (
+            <div key={index} className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-gradient-to-br from-white to-gray-50 rounded-lg group">
+              <div className="p-8 text-center">
+                <div className="flex justify-center mb-6">
                   <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover mr-4"
+                    src={member.image}
+                    alt={member.name}
+                    className="w-24 h-24 rounded-full object-cover group-hover:scale-110 transition-transform duration-300 shadow-lg"
                   />
-                  <div>
-                    <div className="font-bold text-gray-900">{testimonial.name}</div>
-                    <div className="text-sm text-gray-500">{testimonial.role}</div>
-                  </div>
                 </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                  {member.name}
+                </h3>
+                <p className="text-blue-600 font-semibold text-sm uppercase tracking-wide mb-4">
+                  {member.role}
+                </p>
+                <p className="text-gray-600 leading-relaxed">
+                  {member.description}
+                </p>
               </div>
             </div>
           ))}
@@ -67,4 +64,4 @@ const TestimonialsSection: React.FC = () => {
   );
 };
 
-export default TestimonialsSection;
+export default TeamSection;
