@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowLeft, MessageCircle, Calendar, Code, Check, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import cwLogo from '../assets/cw-logo.png';
 
 const StartProject: React.FC = () => {
   return (
@@ -9,17 +10,11 @@ const StartProject: React.FC = () => {
       <div className="container mx-auto px-6 py-8">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="relative flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6 text-blue-600 relative z-10">
-                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6 text-indigo-500 -ml-2 mt-1 relative z-20">
-                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6 text-blue-400 -ml-2 relative z-10">
-                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
-              </svg>
-            </div>
+            <img 
+              src={cwLogo}
+              alt="Clouds Weave Logo" 
+              className="w-8 h-8"
+            />
             <div className="text-2xl font-bold">
               <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Clouds</span>
               <span className="text-gray-900 ml-1">Weave</span>

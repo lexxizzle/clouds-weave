@@ -1,6 +1,7 @@
 import React from 'react';
-import { Cloud, Code, ArrowRight } from 'lucide-react';
+import { Code, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import cwLogo from '../assets/cw-logo.png';
 
 const HeroSection: React.FC = () => {
   return (
@@ -13,11 +14,11 @@ const HeroSection: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex justify-center mb-8">
             <div className="flex items-center space-x-3">
-              <div className="relative flex items-center">
-                <Cloud className="w-7 h-7 text-blue-600 relative z-10" />
-                <Cloud className="w-7 h-7 text-indigo-500 -ml-3 mt-2 relative z-20" />
-                <Cloud className="w-7 h-7 text-blue-400 -ml-3 relative z-10" />
-              </div>
+              <img 
+                src={cwLogo} 
+                alt="Clouds Weave Logo" 
+                className="w-20 h-20"
+              />
               <div className="text-3xl font-bold text-gray-900">
                 <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Clouds</span>
                 <span className="text-gray-900 ml-1">Weave</span>

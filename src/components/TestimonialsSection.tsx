@@ -1,5 +1,6 @@
 import React from 'react';
 import lebamsImage from '../assets/lebams.jpg';
+import frzncisImage from '../assets/francis.jpg';
 
 const TeamSection: React.FC = () => {
   const teamMembers = [
@@ -18,7 +19,7 @@ const TeamSection: React.FC = () => {
     {
       name: "Francis Awagu",
       role: "Product Owner",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+      image: frzncisImage,
       description: "Strategic product leader with deep understanding of business requirements and user needs. Ensures projects deliver real value and exceptional results."
     }
   ];
