@@ -1,6 +1,7 @@
 import React from 'react';
 import lebamsImage from '../assets/lebams.jpg';
-import frzncisImage from '../assets/francis.jpg';
+import francisImage from '../assets/francis.jpg';
+import mack from '../assets/mack.jpg';
 
 const TeamSection: React.FC = () => {
   const teamMembers = [
@@ -13,13 +14,13 @@ const TeamSection: React.FC = () => {
     {
       name: "Mackonen Jordanos",
       role: "Frontend Specialist",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+      image: {mack},
       description: "Creative frontend developer focused on delivering exceptional user experiences. Expert in React, TypeScript, and modern UI/UX design principles."
     },
     {
       name: "Francis Awagu",
       role: "Product Owner",
-      image: frzncisImage,
+      image: francisImage,
       description: "Strategic product leader with deep understanding of business requirements and user needs. Ensures projects deliver real value and exceptional results."
     }
   ];

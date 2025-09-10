@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cloud, Code, Mail, MapPin, Linkedin, Twitter, Github } from 'lucide-react';
+import { Code, Mail, MapPin, Linkedin, Twitter, Github } from 'lucide-react';
 import cwLogo from '../assets/cw-logo.png';
 
 const Footer: React.FC = () => {
