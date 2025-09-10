@@ -1,7 +1,7 @@
 import React from 'react';
 import lebamsImage from '../assets/lebams.jpg';
 import francisImage from '../assets/francis.jpg';
-import mack from '../assets/mack.jpg';
+import mack from '../assets/mack.jpeg';
 
 const TeamSection: React.FC = () => {
   const teamMembers = [
@@ -14,7 +14,7 @@ const TeamSection: React.FC = () => {
     {
       name: "Mackonen Jordanos",
       role: "Frontend Specialist",
-      image: {mack},
+      image: mack,
       description: "Creative frontend developer focused on delivering exceptional user experiences. Expert in React, TypeScript, and modern UI/UX design principles."
     },
     {
